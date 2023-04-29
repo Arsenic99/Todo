@@ -1,0 +1,123 @@
+body{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    h1{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 78px;
+        letter-spacing: 0.25em;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+.App{
+    max-width: 900px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    .tasklist{
+        height: 50vh;
+        overflow-y: scroll;
+    }
+}
+.taskInput{
+    width: 100%;
+    text-align: center;
+    input{
+        width: 100%;
+        background-color: #A8D2A5;
+        color: #3E3B3B;
+        border: none;
+        outline: none;
+        padding: 6px 30px;
+        margin-top: 80px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+    }
+    button{
+        background: linear-gradient(90deg, #A8D2A5 0%, #ACD4E1 115.2%);
+        box-shadow: 0px 4px 4px #ACD4E1;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 16px 122px;
+        margin: 21px auto 21px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        cursor: pointer;
+    }
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    &__description{
+        display: flex;
+    }
+    input{
+        display: none;
+    }
+    button{
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+    label{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        h1{
+            font-size: 36px;
+        }
+    }
+    .taskInput{
+        width: 100%;
+        text-align: center;
+        input{
+            font-size: 18px;
+        }
+        button{
+            padding: 12px 62px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body{
+        h1{
+            font-size: 36px;
+        }
+    }
+    .taskInput{
+        width: 100%;
+        text-align: center;
+        input{
+            font-size: 18px;
+        }
+        button{
+            padding: 5px 32px;
+        }
+    }
+}
